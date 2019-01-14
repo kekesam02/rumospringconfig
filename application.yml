@@ -1,0 +1,20 @@
+server:
+  port: 7979
+  
+#指定服务的名称
+spring:
+  application:
+    name: rumo-itbooking-clondserver-config-server-git
+  cloud:
+    config:
+      server:
+        git:          uri: https://github.com/kekesam02/rumospringconfig.git
+          default-label: master
+          #username: xxxx #如果是私人git，登录和密码是必须的
+          #password: xxxx 
+  profiles:
+    active: native
+
+    
+    
+    
